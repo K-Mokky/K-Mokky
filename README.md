@@ -31,24 +31,42 @@
 <table>
   <tr>
     <td align="center" width="33%">
-      <h3>🔬</h3>
+      <br />
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Microscope.png" width="52" alt="vulnerability analysis" />
+      <br /><br />
       <b>취약점 분석</b>
+      <br />
+      <sub><i>Vulnerability Analysis</i></sub>
       <br /><br />
       <sub>바이너리와 웹을 뜯어보며<br />취약점을 찾아요</sub>
       <br /><br />
+      <code>Binary</code>&nbsp;<code>Web</code>
+      <br /><br />
     </td>
     <td align="center" width="33%">
-      <h3>🔐</h3>
+      <br />
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Key.png" width="52" alt="secure coding" />
+      <br /><br />
       <b>시큐어 코딩</b>
+      <br />
+      <sub><i>Secure Coding</i></sub>
       <br /><br />
       <sub>찾은 만큼 막을 줄도 알아야 하니까,<br />안전한 코드를 써요</sub>
       <br /><br />
+      <code>Defense</code>&nbsp;<code>Code</code>
+      <br /><br />
     </td>
     <td align="center" width="33%">
-      <h3>🛠️</h3>
+      <br />
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" width="52" alt="development" />
+      <br /><br />
       <b>개발</b>
+      <br />
+      <sub><i>Development</i></sub>
       <br /><br />
       <sub>macOS 앱과 웹 서비스를<br />직접 만들어요</sub>
+      <br /><br />
+      <code>macOS</code>&nbsp;<code>Web</code>
       <br /><br />
     </td>
   </tr>
@@ -66,12 +84,30 @@
 
 <table>
   <tr>
-    <td align="center" width="30%"><b>2023 ~ 현재</b></td>
-    <td width="70%">🏫 <b>아주대학교</b> 재학</td>
+    <td align="center" width="72">
+      <img src="assets/ajou.png" width="44" alt="Ajou University" />
+    </td>
+    <td width="430">
+      <b>아주대학교</b>&nbsp;&nbsp;<sub><i>Ajou University</i></sub>
+      <br />
+      <sub>재학 중</sub>
+    </td>
+    <td align="center" width="120">
+      <code>2023 ~ 현재</code>
+    </td>
   </tr>
   <tr>
-    <td align="center"><b>WHS 4기</b></td>
-    <td>🛡️ <b>화이트햇 스쿨</b> · 보안 인재 양성 과정</td>
+    <td align="center">
+      <img src="assets/whs.png" width="44" alt="WhiteHat School" />
+    </td>
+    <td>
+      <b>화이트햇 스쿨</b>&nbsp;&nbsp;<sub><i>WhiteHat School</i></sub>
+      <br />
+      <sub>보안 인재 양성 과정</sub>
+    </td>
+    <td align="center">
+      <code>4기</code>
+    </td>
   </tr>
 </table>
 
