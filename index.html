@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mokky Terminal</title>
+<meta name="description" content="Mokky의 인터랙티브 터미널 — 직접 명령어를 입력해보세요.">
+<style>
+  :root {
+    --bg: #0a0f0d;
+    --panel: #0d1512;
+    --green: #00ff9f;
+    --dim: #56c294;
+    --muted: #7d8f88;
+    --red: #ff5f56;
+    --yellow: #ffbd2e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--green);
+    font-family: "SF Mono", "Fira Code", Menlo, Consolas, "D2Coding", monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  .terminal {
+    width: 100%;
+    max-width: 860px;
+    height: min(88vh, 640px);
+    background: var(--panel);
+    border: 1px solid #1e2f28;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 255, 159, .08), 0 20px 60px rgba(0,0,0,.6);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .titlebar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: #101a16;
+    border-bottom: 1px solid #1e2f28;
+    user-select: none;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .dot.r { background: var(--red); } .dot.y { background: var(--yellow); } .dot.g { background: #27c93f; }
+  .title { flex: 1; text-align: center; color: var(--muted); font-size: 12px; }
+  #screen {
+    flex: 1;
+    padding: 14px 16px;
+    overflow-y: auto;
+    font-size: 13.5px;
+    line-height: 1.65;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  #screen::-webkit-scrollbar { width: 6px; }
+  #screen::-webkit-scrollbar-thumb { background: #1e2f28; border-radius: 3px; }
+  .line { min-height: 1.2em; }
+  .dim { color: var(--dim); }
+  .muted { color: var(--muted); }
+  .err { color: var(--red); }
+  .warn { color: var(--yellow); }
+  .ok { color: var(--green); font-weight: 600; }
+  a { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+  .input-row { display: flex; }
+  .prompt { color: var(--dim); white-space: pre; }
+  #typed { color: var(--green); white-space: pre-wrap; word-break: break-all; }
+  .cursor {
+    display: inline-block;
+    width: 8px; height: 1.1em;
+    background: var(--green);
+    vertical-align: text-bottom;
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+  #hidden-input {
+    position: absolute;
+    opacity: 0;
+    left: -9999px;
+    width: 1px; height: 1px;
+  }
+  @media (max-width: 600px) {
+    #screen { font-size: 12px; }
+    .terminal { height: 92vh; }
+  }
+</style>
+</head>
+<body>
+
+<div class="terminal" id="terminal">
+  <div class="titlebar">
+    <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+    <span class="title">guest@mokky — zsh — 80×24</span>
+  </div>
+  <div id="screen"></div>
+</div>
+<input id="hidden-input" autocomplete="off" autocapitalize="off" spellcheck="false">
+
+<!--
+  ┌──────────────────────────────────────────────┐
+  │  역시. 터미널만 두드리는 게 아니라 소스도 까보는군요.  │
+  │  1단계 통과. 아래 문자열이 마지막 관문입니다.          │
+  │  풀었다면, 결과를 터미널에 그대로 입력해보세요.        │
+  └──────────────────────────────────────────────┘
+
+  RkxBR3tzMHVyYzNfcjM0ZDNyNV80cjNfcjM0bF9oNGNrM3I1fSA6OiDstpXtlZjtlbTsmpQsIOynhOynnCDtlbTsu6Tsi5zrhKTsmpQhIOyDge2SiCDsiJjroLnsnYAgbW9ra3kuc3RvcmUg7JeQ7IScIPCfjok=
+-->
+
+<script>
+(function () {
+  var screen = document.getElementById('screen');
+  var input = document.getElementById('hidden-input');
+  var PROMPT = 'guest@mokky ~ % ';
+  var history = [];
+  var histIdx = -1;
+  var busy = false;
+  var FLAG = 'FLAG{s0urc3_r34d3r5_4r3_r34l_h4ck3r5}';
+
+  var COMMANDS = {
+    help: [
+      '',
+      '  ┌── COMMANDS ─────────────────────────────┐',
+      '  │                                         │',
+      '  │   whoami     내가 누구냐면요            │',
+      '  │   career     학적 & 경력                │',
+      '  │   arsenal    장비창 열기                │',
+      '  │   nmap       포트 스캔                  │',
+      '  │   blog       블로그 바로가기            │',
+      '  │   flag       <span class="warn">🚩 ???</span>                    │',
+      '  │   clear      화면 지우기                │',
+      '  │                                         │',
+      '  └─────────────────────────────────────────┘',
+      '  <span class="muted">Tab: 자동완성 · ↑↓: 히스토리</span>',
+      ''
+    ],
+    whoami: [
+      '',
+      '  <span class="dim">NICKNAME</span>   Mokky 🎩',
+      '  <span class="dim">BLOG</span>       <a href="https://www.mokky.store" target="_blank" rel="noopener">https://www.mokky.store</a>',
+      '  <span class="dim">EMAIL</span>      <a href="mailto:mokky@mokky.store">mokky@mokky.store</a>',
+      '  <span class="dim">학적</span>       아주대학교 재학 (2023 ~ )',
+      '  <span class="dim">경력</span>       화이트햇 스쿨(WHS) 4기',
+      '  <span class="dim">KEYWORD</span>    취약점 분석 · 시큐어 코딩 · macOS 앱 · 웹 서비스',
+      ''
+    ],
+    career: [
+      '',
+      '  <span class="dim">[2023]</span>   아주대학교 입학',
+      '  <span class="dim">[ WHS]</span>   화이트햇 스쿨(WHS) 4기',
+      ''
+    ],
+    arsenal: [
+      '',
+      '  <span class="dim">ENV</span>        Mac · iTerm',
+      '  <span class="dim">AI</span>         Claude · GPT · Gemini · GJC',
+      '  <span class="dim">LANG</span>       Java · C · Python',
+      ''
+    ],
+    nmap: [
+      '',
+      'Starting Nmap ( <a href="https://www.mokky.store" target="_blank" rel="noopener">https://www.mokky.store</a> )',
+      'Nmap scan report for mokky',
+      'Host is up (0.0042s latency).',
+      '',
+      'PORT      STATE   SERVICE        VERSION',
+      '22/tcp    open    collaboration  협업 요청 상시 오픈',
+      '80/tcp    open    web-dev        웹 서비스 만드는 중',
+      '443/tcp   open    security       취약점 분석 / 시큐어 코딩',
+      '1337/tcp  open    ctf            l33t m0de enabled',
+      '8080/tcp  open    side-project   macOS 앱 빌드 중...',
+      '',
+      '<span class="muted">Note: 재미없는 포트는 전부 filtered 처리됨.</span>',
+      ''
+    ],
+    flag: [
+      '',
+      '<span class="err">Permission denied.</span>',
+      '',
+      '진짜 해커라면 명령어 따위에 기대지 않는 법.',
+      '힌트: 이 페이지의 <span class="warn">소스</span> 어딘가, base64.',
+      '풀었다면 결과를 여기 터미널에 그대로 입력해보세요.',
+      ''
+    ]
+  };
+
+  function print(html, cls) {
+    var div = document.createElement('div');
+    div.className = 'line' + (cls ? ' ' + cls : '');
+    div.innerHTML = html === '' ? '&nbsp;' : html;
+    screen.appendChild(div);
+    screen.scrollTop = screen.scrollHeight;
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function printLines(lines, done) {
+    var i = 0;
+    (function next() {
+      if (i >= lines.length) { if (done) done(); return; }
+      print(lines[i++]);
+      setTimeout(next, 18);
+    })();
+  }
+
+  var inputRow, typedSpan;
+  function newPrompt() {
+    inputRow = document.createElement('div');
+    inputRow.className = 'line input-row';
+    inputRow.innerHTML = '<span class="prompt">' + PROMPT + '</span><span id="typed"></span><span class="cursor"></span>';
+    screen.appendChild(inputRow);
+    typedSpan = inputRow.querySelector('#typed');
+    screen.scrollTop = screen.scrollHeight;
+    busy = false;
+  }
+
+  function freezePrompt(cmdText) {
+    if (!inputRow) return;
+    inputRow.innerHTML = '<span class="prompt">' + PROMPT + '</span>' + escapeHtml(cmdText);
+    inputRow = null;
+  }
+
+  function run(raw) {
+    var cmd = raw.trim();
+    freezePrompt(cmd);
+    busy = true;
+    if (cmd === '') { newPrompt(); return; }
+    history.push(cmd);
+    histIdx = history.length;
+
+    var base = cmd.split(/\s+/)[0].toLowerCase();
+
+    if (cmd === FLAG) {
+      printLines([
+        '',
+        '<span class="ok">████ ACCESS GRANTED ████</span>',
+        '',
+        '축하해요, 진짜 해커시네요! 🎉',
+        '소스를 읽고, 디코딩하고, 다시 입력까지. 완벽한 절차예요.',
+        '상품 수령은 <a href="https://www.mokky.store" target="_blank" rel="noopener">mokky.store</a> 에서.',
+        ''
+      ], newPrompt);
+      return;
+    }
+    if (base === 'clear') { screen.innerHTML = ''; newPrompt(); return; }
+    if (base === 'blog') {
+      printLines(['', '블로그로 이동합니다... <a href="https://www.mokky.store" target="_blank" rel="noopener">mokky.store</a>', ''], function () {
+        window.open('https://www.mokky.store', '_blank');
+        newPrompt();
+      });
+      return;
+    }
+    if (base === 'exit' || base === 'logout') {
+      printLines(['', '나가긴 어딜 나가요. <span class="muted">(세션은 영원합니다)</span>', ''], newPrompt);
+      return;
+    }
+    if (base === 'sudo') {
+      printLines(['', '<span class="err">mokky is not in the sudoers file. 이 사건은 보고될 것입니다.</span>', ''], newPrompt);
+      return;
+    }
+    if (cmd.replace(/\s+/g, ' ') === 'rm -rf /' || cmd.replace(/\s+/g, ' ') === 'rm -rf /*') {
+      printLines([
+        '',
+        '<span class="err">rm: /: 지우려는 시도 감지</span>',
+        '<span class="warn">...농담이죠? 백업은 하고 사시나요?</span>',
+        ''
+      ], newPrompt);
+      return;
+    }
+    if (base === 'ls') {
+      printLines(['', '<span class="dim">projects/</span>  <span class="dim">writeups/</span>  secrets.txt', ''], newPrompt);
+      return;
+    }
+    if (base === 'cat' && /secrets\.txt/.test(cmd)) {
+      printLines(['', '<span class="err">cat: secrets.txt: Permission denied</span>  <span class="muted">(당연하죠)</span>', ''], newPrompt);
+      return;
+    }
+    if (COMMANDS[base]) { printLines(COMMANDS[base], newPrompt); return; }
+
+    printLines(['<span class="err">zsh: command not found: ' + escapeHtml(base) + '</span>  <span class="muted">(help 를 입력해보세요)</span>'], newPrompt);
+  }
+
+  // 입력 처리
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey) return;
+    input.focus();
+  });
+  document.addEventListener('click', function () { input.focus(); });
+  document.addEventListener('touchend', function () { input.focus(); });
+
+  input.addEventListener('input', function () {
+    if (typedSpan) typedSpan.textContent = input.value;
+    screen.scrollTop = screen.scrollHeight;
+  });
+
+  input.addEventListener('keydown', function (e) {
+    if (busy) { e.preventDefault(); return; }
+    if (e.key === 'Enter') {
+      var v = input.value;
+      input.value = '';
+      run(v);
+      e.preventDefault();
+    } else if (e.key === 'ArrowUp') {
+      if (histIdx > 0) { histIdx--; input.value = history[histIdx]; typedSpan.textContent = input.value; }
+      e.preventDefault();
+    } else if (e.key === 'ArrowDown') {
+      if (histIdx < history.length - 1) { histIdx++; input.value = history[histIdx]; }
+      else { histIdx = history.length; input.value = ''; }
+      typedSpan.textContent = input.value;
+      e.preventDefault();
+    } else if (e.key === 'Tab') {
+      e.preventDefault();
+      var cur = input.value.toLowerCase();
+      if (!cur) return;
+      var names = Object.keys(COMMANDS).concat(['clear', 'blog', 'exit', 'ls']);
+      var hit = names.filter(function (n) { return n.indexOf(cur) === 0; });
+      if (hit.length === 1) { input.value = hit[0]; typedSpan.textContent = input.value; }
+    }
+  });
+
+  // 부팅 시퀀스
+  var boot = [
+    ['<span class="muted">Last login: 방금 전, 당신의 브라우저에서</span>', 80],
+    ['<span class="muted">Connecting to mokky ...</span>', 350],
+    ['<span class="ok">access granted_</span>', 400],
+    ['', 150]
+  ];
+
+  function typeCommand(text, done) {
+    var i = 0;
+    var row = document.createElement('div');
+    row.className = 'line';
+    row.innerHTML = '<span class="prompt">' + PROMPT + '</span><span class="t"></span><span class="cursor"></span>';
+    screen.appendChild(row);
+    var t = row.querySelector('.t');
+    (function step() {
+      if (i < text.length) {
+        t.textContent += text[i++];
+        screen.scrollTop = screen.scrollHeight;
+        setTimeout(step, 55);
+      } else {
+        setTimeout(function () {
+          row.innerHTML = '<span class="prompt">' + PROMPT + '</span>' + text;
+          done();
+        }, 250);
+      }
+    })();
+  }
+
+  (function bootSeq(i) {
+    if (i < boot.length) {
+      setTimeout(function () { print(boot[i][0]); bootSeq(i + 1); }, boot[i][1]);
+    } else {
+      typeCommand('help', function () {
+        printLines(COMMANDS.help, function () {
+          newPrompt();
+          input.focus();
+        });
+      });
+    }
+  })(0);
+})();
+</script>
+</body>
+</html>

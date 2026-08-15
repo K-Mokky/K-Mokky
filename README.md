@@ -6,56 +6,65 @@
 
 <img src="https://komarev.com/ghpvc/?username=K-Mokky&color=00ff9f&style=flat-square&label=INTRUDERS+DETECTED" alt="profile views" />
 
+<br><br>
+
+# 💻 Mokky Terminal
+
+**여기는 녹화본이에요. 진짜 터미널에서 직접 명령어를 입력해보세요 ↓**
+
+<a href="https://k-mokky.github.io/K-Mokky/">
+  <img src="https://img.shields.io/badge/%E2%96%B6_ACCESS_TERMINAL-%EB%AA%85%EB%A0%B9%EC%96%B4%EB%A5%BC_%EC%A7%81%EC%A0%91_%EC%9E%85%EB%A0%A5%ED%95%B4%EB%B3%B4%EC%84%B8%EC%9A%94-00ff9f?style=for-the-badge&logo=gnometerminal&logoColor=white&labelColor=0f2027" alt="access terminal" height="40" />
+</a>
+
 </div>
 
-<br>
-
-## 💻 Mokky Terminal v1.0
+## 📼 지난 세션 녹화본
 
 ```console
-mokky@macbook ~ % help
+Last login: 방금 전, 당신의 브라우저에서
 
-  ┌── COMMANDS ──────────────────────────────────┐
-  │                                              │
-  │   whoami     내가 누구냐면요                 │
-  │   career     학적 & 경력                     │
-  │   arsenal    장비창 열기                     │
-  │   nmap       포트 스캔                       │
-  │   flag       🚩 ???                          │
-  │                                              │
-  └──────────────────────────────────────────────┘
+guest@mokky ~ % help
 
-  실행할 명령어를 아래에서 클릭하세요 ▼
-```
+  ┌── COMMANDS ─────────────────────────────┐
+  │                                         │
+  │   whoami     내가 누구냐면요            │
+  │   career     학적 & 경력                │
+  │   arsenal    장비창 열기                │
+  │   nmap       포트 스캔                  │
+  │   blog       블로그 바로가기            │
+  │   flag       🚩 ???                     │
+  │   clear      화면 지우기                │
+  │                                         │
+  └─────────────────────────────────────────┘
 
-<details open>
-<summary><code>mokky@macbook ~ % whoami</code></summary>
+guest@mokky ~ % whoami
 
-```console
   NICKNAME   Mokky 🎩
   BLOG       https://www.mokky.store
   EMAIL      mokky@mokky.store
   학적       아주대학교 재학 (2023 ~ )
   경력       화이트햇 스쿨(WHS) 4기
   KEYWORD    취약점 분석 · 시큐어 코딩 · macOS 앱 · 웹 서비스
-```
 
-</details>
+guest@mokky ~ % career --all
 
-<details>
-<summary><code>mokky@macbook ~ % career --all</code></summary>
-
-```console
   [2023]   아주대학교 입학
   [ WHS]   화이트햇 스쿨(WHS) 4기
+
+guest@mokky ~ % flag
+Permission denied.
+
+guest@mokky ~ % █
 ```
 
-</details>
+<div align="center">
 
-<details>
-<summary><code>mokky@macbook ~ % arsenal</code></summary>
+<sub>나머지 명령어(<code>arsenal</code>, <code>nmap</code>, <code>flag</code>...)는 <a href="https://k-mokky.github.io/K-Mokky/">실제 터미널</a>에서 직접 쳐보세요. sudo도 됩니다. 아마도.</sub>
 
-<br>
+</div>
+
+## 🛠 Arsenal
+
 <div align="center">
 
 ![Mac](https://img.shields.io/badge/Mac-000000?style=for-the-badge&logo=apple&logoColor=white)
@@ -69,39 +78,6 @@ mokky@macbook ~ % help
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 </div>
-</details>
-
-<details>
-<summary><code>mokky@macbook ~ % nmap -sV mokky</code></summary>
-
-```console
-Starting Nmap ( https://www.mokky.store )
-Nmap scan report for mokky
-Host is up (0.0042s latency).
-
-PORT      STATE   SERVICE        VERSION
-22/tcp    open    collaboration  협업 요청 상시 오픈
-80/tcp    open    web-dev        웹 서비스 만드는 중
-443/tcp   open    security       취약점 분석 / 시큐어 코딩
-1337/tcp  open    ctf            l33t m0de enabled
-8080/tcp  open    side-project   macOS 앱 빌드 중...
-
-Note: 재미없는 포트는 전부 filtered 처리됨.
-```
-
-</details>
-
-<details>
-<summary><code>mokky@macbook ~ % flag</code></summary>
-
-```console
-Permission denied.
-
-진짜 해커라면 명령어 따위에 기대지 않는 법.
-힌트: 이 페이지의 소스 어딘가, base64.
-```
-
-</details>
 
 ## 📊 `$ git log --stat`
 
@@ -124,6 +100,7 @@ Permission denied.
   ┌──────────────────────────────────────────────┐
   │  오, 여기까지 들어오셨네요. 역시 소스부터 까보는 타입.  │
   │  1단계 통과. 아래 문자열이 마지막 관문입니다.          │
+  │  풀었다면, 결과를 실제 터미널에 그대로 입력해보세요.    │
   └──────────────────────────────────────────────┘
 
   RkxBR3tzMHVyYzNfcjM0ZDNyNV80cjNfcjM0bF9oNGNrM3I1fSA6OiDstpXtlZjtlbTsmpQsIOynhOynnCDtlbTsu6Tsi5zrhKTsmpQhIOyDge2SiCDsiJjroLnsnYAgbW9ra3kuc3RvcmUg7JeQ7IScIPCfjok=
