@@ -1,70 +1,73 @@
 <div align="center">
 
-# 안녕하세요, Mokky입니다 👋
+<br />
 
-**보안과 개발 사이 어딘가에서 일하는 개발자예요.**
+# `$ man mokky`
 
-취약점 분석 · 시큐어 코딩 · macOS 앱 · 웹 서비스
+보안과 개발 사이 어딘가에서 일하는 개발자예요.
 
-<a href="https://www.mokky.store">
-  <img src="https://img.shields.io/badge/Blog-mokky.store-2c5364?style=flat-square&logo=hugo&logoColor=white" alt="blog" />
-</a>
-<a href="mailto:mokky@mokky.store">
-  <img src="https://img.shields.io/badge/Email-mokky@mokky.store-D14836?style=flat-square&logo=gmail&logoColor=white" alt="email" />
-</a>
-<a href="https://github.com/K-Mokky">
-  <img src="https://img.shields.io/badge/GitHub-K--Mokky-181717?style=flat-square&logo=github&logoColor=white" alt="github" />
-</a>
+<a href="https://www.mokky.store"><img src="https://img.shields.io/badge/blog-mokky.store-2c5364?style=flat-square&logo=hugo&logoColor=white" alt="blog" /></a>&nbsp;
+<a href="mailto:mokky@mokky.store"><img src="https://img.shields.io/badge/mail-mokky@mokky.store-2c5364?style=flat-square&logo=gmail&logoColor=white" alt="email" /></a>&nbsp;
+<a href="https://github.com/K-Mokky"><img src="https://img.shields.io/badge/github-K--Mokky-2c5364?style=flat-square&logo=github&logoColor=white" alt="github" /></a>
 
 </div>
 
----
+<br />
 
-## 🎓 학적
+```text
+MOKKY(1)                    General Commands Manual                     MOKKY(1)
 
-| 기간 | 소속 | 상태 |
-| :--- | :--- | :--- |
-| 2023 ~ 현재 | **아주대학교** | 재학 중 |
+NAME
+     mokky – 보안과 개발 사이 어딘가에서 일하는 개발자
 
-## 🏆 경력 · 활동
+SYNOPSIS
+     mokky [--analyze vuln] [--code secure] [--build macos | web]
 
-| 기간 | 활동 | 비고 |
-| :--- | :--- | :--- |
-| WHS 4기 | **화이트햇 스쿨 (WHS)** | 보안 인재 양성 과정 |
+DESCRIPTION
+     취약점을 찾는 눈으로 코드를 쓰고, 코드를 쓰는 손으로 취약점을 찾아요.
 
-## 🛠 Tech Stack
+     --analyze vuln
+             바이너리와 웹을 뜯어보며 취약점을 분석해요.
 
-**Environment**
+     --code secure
+             찾은 만큼 막을 줄도 알아야 하니까, 시큐어 코딩을 해요.
 
-![Mac](https://img.shields.io/badge/Mac-000000?style=for-the-badge&logo=apple&logoColor=white)
-![iTerm](https://img.shields.io/badge/iTerm-000000?style=for-the-badge&logo=iterm2&logoColor=white)
+     --build macos | web
+             macOS 앱과 웹 서비스를 만들어요.
 
-**AI**
+HISTORY
+     2023 ~ 현재    아주대학교 재학
+     WHS 4기       화이트햇 스쿨 · 보안 인재 양성 과정
 
-![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
-![GPT](https://img.shields.io/badge/GPT-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
-![GJC](https://img.shields.io/badge/GJC-00A98F?style=for-the-badge)
+ENVIRONMENT
+     OS      macOS, iTerm2
+     LANG    Java, C, Python
+     AI      Claude, GPT, Gemini, GJC
 
-**Language**
+FILES
+     ~/blog       https://www.mokky.store    삽질과 분석 기록
+     ~/contact    mokky@mokky.store
 
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+EXIT STATUS
+     아직 종료된 적이 없어요. (재학 중)
 
-## 📊 GitHub Stats
+BUGS
+     버그를 찾으셨다면 mokky@mokky.store 로 제보해 주세요.
+     취약점이라면 더 환영해요.
+
+Darwin                          August 15, 2026                           Darwin
+```
 
 <div align="center">
+
+`$ github-stats --user K-Mokky`
 
 <img src="https://github-readme-stats.vercel.app/api?username=K-Mokky&show_icons=true&hide_border=true&title_color=2c5364&icon_color=2c5364" height="160" alt="GitHub Stats" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=K-Mokky&layout=compact&hide_border=true&title_color=2c5364" height="160" alt="Top Languages" />
 
-</div>
+<br />
+<br />
 
----
-
-<div align="center">
-
-📝 삽질과 분석 기록은 블로그에 → [**mokky.store**](https://www.mokky.store)
+<sub>삽질과 분석 기록은 → <a href="https://www.mokky.store"><b>mokky.store</b></a></sub>
 
 </div>
