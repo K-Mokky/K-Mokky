@@ -10,20 +10,69 @@
 
 <br>
 
-## 💻 `$ ssh guest@mokky`
+## 💻 Mokky Terminal v1.0
 
 ```console
-Last login: 오늘도 어김없이 터미널 앞
+mokky@macbook ~ % help
 
-mokky@macbook ~ % whoami
-보안과 개발 사이 어딘가에 사는 개발자 🎩
+  ┌── COMMANDS ──────────────────────────────────┐
+  │                                              │
+  │   whoami     내가 누구냐면요                 │
+  │   career     학적 & 경력                     │
+  │   arsenal    장비창 열기                     │
+  │   nmap       포트 스캔                       │
+  │   flag       🚩 ???                          │
+  │                                              │
+  └──────────────────────────────────────────────┘
 
-mokky@macbook ~ % sudo make coffee
-[sudo] password for mokky: ********
-☕ 추출 완료. 코딩 모드 진입.
+  실행할 명령어를 아래에서 클릭하세요 ▼
 ```
 
-## 🔍 `$ nmap -sV mokky`
+<details open>
+<summary><code>mokky@macbook ~ % whoami</code></summary>
+
+```console
+  NICKNAME   Mokky 🎩
+  BLOG       https://www.mokky.store
+  EMAIL      mokky@mokky.store
+  학적       아주대학교 재학 (2023 ~ )
+  경력       화이트햇 스쿨(WHS) 4기
+  KEYWORD    취약점 분석 · 시큐어 코딩 · macOS 앱 · 웹 서비스
+```
+
+</details>
+
+<details>
+<summary><code>mokky@macbook ~ % career --all</code></summary>
+
+```console
+  [2023]   아주대학교 입학
+  [ WHS]   화이트햇 스쿨(WHS) 4기
+```
+
+</details>
+
+<details>
+<summary><code>mokky@macbook ~ % arsenal</code></summary>
+
+<br>
+<div align="center">
+
+![Mac](https://img.shields.io/badge/Mac-000000?style=for-the-badge&logo=apple&logoColor=white)
+![iTerm](https://img.shields.io/badge/iTerm-000000?style=for-the-badge&logo=iterm2&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
+![GPT](https://img.shields.io/badge/GPT-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
+![GJC](https://img.shields.io/badge/GJC-00FF9F?style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+</div>
+</details>
+
+<details>
+<summary><code>mokky@macbook ~ % nmap -sV mokky</code></summary>
 
 ```console
 Starting Nmap ( https://www.mokky.store )
@@ -40,35 +89,19 @@ PORT      STATE   SERVICE        VERSION
 Note: 재미없는 포트는 전부 filtered 처리됨.
 ```
 
-## 🧬 `$ cat Mokky.swift`
+</details>
 
-```swift
-final class Mokky: Developer, SecurityResearcher {
-    let interests   = ["취약점 분석", "시큐어 코딩", "macOS 앱", "웹 서비스"]
-    let blog        = URL(string: "https://www.mokky.store")!
+<details>
+<summary><code>mokky@macbook ~ % flag</code></summary>
 
-    func daily() {
-        while alive {
-            code()
-            breakThings()      // 합법적으로만
-            patchThings()      // 부순 건 고칩니다
-        }
-    }
-}
+```console
+Permission denied.
+
+진짜 해커라면 명령어 따위에 기대지 않는 법.
+힌트: 이 페이지의 소스 어딘가, base64.
 ```
 
-## 🛠 Arsenal
-
-<div align="center">
-
-![Swift](https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
-
-</div>
+</details>
 
 ## 📊 `$ git log --stat`
 
@@ -86,22 +119,6 @@ final class Mokky: Developer, SecurityResearcher {
 <img src="https://streak-stats.demolab.com?user=K-Mokky&theme=dark&hide_border=true&background=00000000&ring=00ff9f&fire=00ff9f&currStreakLabel=00ff9f" height="170" alt="streak" />
 
 </div>
-
-## 🐍 잔디를 먹는 뱀
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/K-Mokky/K-Mokky/output/github-snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/K-Mokky/K-Mokky/output/github-snake.svg" alt="snake eating my contributions" />
-</picture>
-
-</div>
-
-## 🚩 Capture The Flag
-
-> 이 README 어딘가에 `FLAG{...}`가 숨어 있어요.
-> **소스를 읽는 자에게 복이 있나니.** 찾았다면 [블로그](https://www.mokky.store)로 제보 환영 🕵️
 
 <!--
   ┌──────────────────────────────────────────────┐
