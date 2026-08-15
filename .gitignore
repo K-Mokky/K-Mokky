@@ -1,0 +1,7 @@
+# local agent/session state — never commit
+.gjc/
+
+# misc
+.DS_Store
+.env
+.env.*
