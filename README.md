@@ -32,42 +32,124 @@
   <tr>
     <td align="center" width="33%">
       <br />
-      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Microscope.png" width="52" alt="vulnerability analysis" />
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="52" alt="windows kernel 1-day" />
       <br /><br />
-      <b>취약점 분석</b>
+      <b>Windows Kernel 1-Day</b>
       <br />
-      <sub><i>Vulnerability Analysis</i></sub>
+      <sub><i>Kernel 1-Day Analysis</i></sub>
       <br /><br />
-      <sub>바이너리와 웹을 뜯어보며<br />취약점을 찾아요</sub>
+      <sub>패치된 취약점을 파고들어<br />커널 1-day를 재현·분석해요</sub>
       <br /><br />
-      <code>Binary</code>&nbsp;<code>Web</code>
+      <code>Kernel</code>&nbsp;<code>Windows</code>
       <br /><br />
     </td>
     <td align="center" width="33%">
       <br />
-      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Key.png" width="52" alt="secure coding" />
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" width="52" alt="vibe coding" />
       <br /><br />
-      <b>시큐어 코딩</b>
+      <b>바이브코딩</b>
       <br />
-      <sub><i>Secure Coding</i></sub>
+      <sub><i>Vibe Coding</i></sub>
       <br /><br />
-      <sub>찾은 만큼 막을 줄도 알아야 하니까,<br />안전한 코드를 써요</sub>
+      <sub>AI와 함께 아이디어를<br />빠르게 프로그램으로 만들어요</sub>
       <br /><br />
-      <code>Defense</code>&nbsp;<code>Code</code>
+      <code>AI</code>&nbsp;<code>Build</code>
       <br /><br />
     </td>
     <td align="center" width="33%">
       <br />
-      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" width="52" alt="development" />
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Biohazard.png" width="52" alt="malware analysis" />
       <br /><br />
-      <b>개발</b>
+      <b>악성코드 분석</b>
       <br />
-      <sub><i>Development</i></sub>
+      <sub><i>Malware Analysis</i></sub>
       <br /><br />
-      <sub>macOS 앱과 웹 서비스를<br />직접 만들어요</sub>
+      <sub>악성 바이너리를 뜯어보며<br />행위와 정체를 밝혀내요</sub>
       <br /><br />
-      <code>macOS</code>&nbsp;<code>Web</code>
+      <code>Binary</code>&nbsp;<code>Reversing</code>
       <br /><br />
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<br />
+
+<!-- ═══════════════════════ PROGRAMS ═══════════════════════ -->
+
+<div align="center">
+
+## 🚀 Programs
+
+<sub>직접 만들어 온 프로그램들이에요</sub>
+
+<br /><br />
+
+<table>
+  <tr>
+    <td align="center" width="92">
+      <img src="https://raw.githubusercontent.com/K-Mokky/chadon-release/main/chadon-icon3-transparent.png" width="56" alt="차돈" />
+    </td>
+    <td width="430">
+      <b>차돈</b>&nbsp;&nbsp;<sub><i>Chadon</i></sub>
+      <br />
+      <sub>자동차 정비소 매출·매입 관리 프로그램</sub>
+    </td>
+    <td align="center" width="118">
+      <a href="https://chadon.mokky.store"><img src="https://img.shields.io/badge/Website-2c5364?style=flat-square&logo=googlechrome&logoColor=white" alt="website" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/K-Mokky/ai-labor-office/main/icon.png" width="56" alt="AI 노동청" />
+    </td>
+    <td>
+      <b>AI 노동청</b>&nbsp;&nbsp;<sub><i>AI Labor Office</i></sub>
+      <br />
+      <sub>AI 사용량을 보여주는 macOS 메뉴바 앱 + 위젯</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/K-Mokky/ai-labor-office"><img src="https://img.shields.io/badge/GitHub-0f2027?style=flat-square&logo=github&logoColor=white" alt="github" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/K-Mokky/mokky.viser.io/main/assets/viser-icon.png" width="56" alt="Viser" />
+    </td>
+    <td>
+      <b>Viser</b>&nbsp;&nbsp;<sub><i>Local AI Assistant CLI</i></sub>
+      <br />
+      <sub>로컬 AI CLI를 실행해 답변받는 개인 비서 CLI</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/K-Mokky/mokky.viser.io"><img src="https://img.shields.io/badge/GitHub-0f2027?style=flat-square&logo=github&logoColor=white" alt="github" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Hearts.png" width="52" alt="내 이상형을 돌려도" />
+    </td>
+    <td>
+      <b>내 이상형을 돌려도!</b>&nbsp;&nbsp;<sub><i>Ideal Type Roulette</i></sub>
+      <br />
+      <sub>질문 답변으로 이상형 이미지를 만드는 웹 앱</sub>
+    </td>
+    <td align="center">
+      <a href="https://mokky-love-io.vercel.app"><img src="https://img.shields.io/badge/Website-2c5364?style=flat-square&logo=vercel&logoColor=white" alt="website" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/K-Mokky/mokky.IpadBatteryCheck.io/main/%EC%95%B1%EC%95%84%EC%9D%B4%EC%BD%98.jpg" width="56" alt="iPad Battery Check" />
+    </td>
+    <td>
+      <b>iPad Battery Check</b>&nbsp;&nbsp;<sub><i>iPadOS</i></sub>
+      <br />
+      <sub>아이패드 배터리 상태를 점검하는 앱</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/K-Mokky/mokky.IpadBatteryCheck.io"><img src="https://img.shields.io/badge/GitHub-0f2027?style=flat-square&logo=github&logoColor=white" alt="github" /></a>
     </td>
   </tr>
 </table>
