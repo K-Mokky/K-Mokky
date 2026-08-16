@@ -97,7 +97,7 @@
       <sub>자동차 정비소 매출·매입 관리 프로그램</sub>
     </td>
     <td align="center" width="118">
-      <a href="https://chadon.mokky.store"><img src="https://img.shields.io/badge/Website-2c5364?style=flat-square&logo=googlechrome&logoColor=white" alt="website" /></a>
+      <a href="https://chadon.mokky.store" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Website-2c5364?style=flat-square&logo=googlechrome&logoColor=white" alt="website" /></a>
     </td>
   </tr>
   <tr>
@@ -110,7 +110,7 @@
       <sub>AI 사용량을 보여주는 macOS 메뉴바 앱 + 위젯</sub>
     </td>
     <td align="center">
-      <a href="https://github.com/K-Mokky/ai-labor-office"><img src="https://img.shields.io/badge/GitHub-0f2027?style=flat-square&logo=github&logoColor=white" alt="github" /></a>
+      <a href="https://github.com/K-Mokky/ai-labor-office" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-0f2027?style=flat-square&logo=github&logoColor=white" alt="github" /></a>
     </td>
   </tr>
   <tr>
@@ -123,7 +123,7 @@
       <sub>로컬 AI CLI를 실행해 답변받는 개인 비서 CLI</sub>
     </td>
     <td align="center">
-      <a href="https://github.com/K-Mokky/mokky.viser.io"><img src="https://img.shields.io/badge/GitHub-0f2027?style=flat-square&logo=github&logoColor=white" alt="github" /></a>
+      <a href="https://github.com/K-Mokky/mokky.viser.io" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-0f2027?style=flat-square&logo=github&logoColor=white" alt="github" /></a>
     </td>
   </tr>
   <tr>
@@ -136,7 +136,7 @@
       <sub>질문 답변으로 이상형 이미지를 만드는 웹 앱</sub>
     </td>
     <td align="center">
-      <a href="https://mokky-love-io.vercel.app"><img src="https://img.shields.io/badge/Website-2c5364?style=flat-square&logo=vercel&logoColor=white" alt="website" /></a>
+      <a href="intoss://ideal-type-roulette" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Apps%20in%20Toss-2c5364?style=flat-square&logoColor=white" alt="apps in toss" /></a>
     </td>
   </tr>
   <tr>
@@ -149,7 +149,7 @@
       <sub>아이패드 배터리 상태를 점검하는 앱</sub>
     </td>
     <td align="center">
-      <a href="https://github.com/K-Mokky/mokky.IpadBatteryCheck.io"><img src="https://img.shields.io/badge/GitHub-0f2027?style=flat-square&logo=github&logoColor=white" alt="github" /></a>
+      <a href="https://github.com/K-Mokky/mokky.IpadBatteryCheck.io" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/GitHub-0f2027?style=flat-square&logo=github&logoColor=white" alt="github" /></a>
     </td>
   </tr>
 </table>
