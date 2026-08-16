@@ -2,15 +2,15 @@
 
 <!-- ═══════════════════════ HEADER ═══════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Mokky&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=%EB%B3%B4%EC%95%88%EA%B3%BC%20%EA%B0%9C%EB%B0%9C%20%EC%82%AC%EC%9D%B4%20%EC%96%B4%EB%94%98%EA%B0%80%EC%97%90%EC%84%9C%20%EC%9D%BC%ED%95%98%EB%8A%94%20%EA%B0%9C%EB%B0%9C%EC%9E%90&descSize=18&descAlignY=58" width="100%" alt="header" />
+<picture><img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Mokky&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=%EB%B3%B4%EC%95%88%EA%B3%BC%20%EA%B0%9C%EB%B0%9C%20%EC%82%AC%EC%9D%B4%20%EC%96%B4%EB%94%98%EA%B0%80%EC%97%90%EC%84%9C%20%EC%9D%BC%ED%95%98%EB%8A%94%20%EA%B0%9C%EB%B0%9C%EC%9E%90&descSize=18&descAlignY=58" width="100%" alt="header" /></picture>
 
 <!-- ═══════════════════════ PROFILE ═══════════════════════ -->
 
-<img src="https://github.com/K-Mokky.png" width="130" alt="profile" />
+<picture><img src="https://github.com/K-Mokky.png" width="130" alt="profile" /></picture>
 
 <br /><br />
 
-<img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+KR&weight=500&size=22&duration=2800&pause=900&color=2C5364&center=true&vCenter=true&width=480&lines=%EC%B7%A8%EC%95%BD%EC%A0%90%EC%9D%84%20%EC%B0%BE%EB%8A%94%20%EB%88%88%EC%9C%BC%EB%A1%9C%20%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%8D%A8%EC%9A%94%3B%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%93%B0%EB%8A%94%20%EC%86%90%EC%9C%BC%EB%A1%9C%20%EC%B7%A8%EC%95%BD%EC%A0%90%EC%9D%84%20%EC%B0%BE%EC%95%84%EC%9A%94%3BmacOS%20%EC%95%B1%EA%B3%BC%20%EC%9B%B9%20%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%9A%94" alt="typing" />
+<picture><img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+KR&weight=500&size=22&duration=2800&pause=900&color=2C5364&center=true&vCenter=true&width=480&lines=%EC%B7%A8%EC%95%BD%EC%A0%90%EC%9D%84%20%EC%B0%BE%EB%8A%94%20%EB%88%88%EC%9C%BC%EB%A1%9C%20%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%8D%A8%EC%9A%94%3B%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%93%B0%EB%8A%94%20%EC%86%90%EC%9C%BC%EB%A1%9C%20%EC%B7%A8%EC%95%BD%EC%A0%90%EC%9D%84%20%EC%B0%BE%EC%95%84%EC%9A%94%3BmacOS%20%EC%95%B1%EA%B3%BC%20%EC%9B%B9%20%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%9A%94" alt="typing" /></picture>
 
 <br />
 
@@ -32,7 +32,7 @@
   <tr>
     <td align="center" width="33%">
       <br />
-      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="52" alt="windows kernel 1-day" />
+      <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="52" alt="windows kernel 1-day" /></picture>
       <br /><br />
       <b>Windows Kernel 1-Day</b>
       <br />
@@ -45,7 +45,7 @@
     </td>
     <td align="center" width="33%">
       <br />
-      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" width="52" alt="vibe coding" />
+      <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" width="52" alt="vibe coding" /></picture>
       <br /><br />
       <b>바이브코딩</b>
       <br />
@@ -58,7 +58,7 @@
     </td>
     <td align="center" width="33%">
       <br />
-      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Biohazard.png" width="52" alt="malware analysis" />
+      <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Biohazard.png" width="52" alt="malware analysis" /></picture>
       <br /><br />
       <b>악성코드 분석</b>
       <br />
@@ -89,7 +89,7 @@
 <table>
   <tr>
     <td align="center" width="92">
-      <img src="https://raw.githubusercontent.com/K-Mokky/chadon-release/main/chadon-icon3-transparent.png" width="56" alt="차돈" />
+      <picture><img src="https://raw.githubusercontent.com/K-Mokky/chadon-release/main/chadon-icon3-transparent.png" width="56" alt="차돈" /></picture>
     </td>
     <td width="430">
       <b>차돈</b>&nbsp;&nbsp;<sub><i>Chadon</i></sub>
@@ -102,7 +102,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/K-Mokky/ai-labor-office/main/icon.png" width="56" alt="AI 노동청" />
+      <picture><img src="https://raw.githubusercontent.com/K-Mokky/ai-labor-office/main/icon.png" width="56" alt="AI 노동청" /></picture>
     </td>
     <td>
       <b>AI 노동청</b>&nbsp;&nbsp;<sub><i>AI Labor Office</i></sub>
@@ -115,7 +115,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/K-Mokky/mokky.viser.io/main/assets/viser-icon.png" width="56" alt="Viser" />
+      <picture><img src="https://raw.githubusercontent.com/K-Mokky/mokky.viser.io/main/assets/viser-icon.png" width="56" alt="Viser" /></picture>
     </td>
     <td>
       <b>Viser</b>&nbsp;&nbsp;<sub><i>Local AI Assistant CLI</i></sub>
@@ -128,7 +128,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Hearts.png" width="52" alt="내 이상형을 돌려도" />
+      <picture><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Face%20with%20Hearts.png" width="52" alt="내 이상형을 돌려도" /></picture>
     </td>
     <td>
       <b>내 이상형을 돌려도!</b>&nbsp;&nbsp;<sub><i>Ideal Type Roulette</i></sub>
@@ -141,7 +141,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="https://raw.githubusercontent.com/K-Mokky/mokky.IpadBatteryCheck.io/main/%EC%95%B1%EC%95%84%EC%9D%B4%EC%BD%98.jpg" width="56" alt="iPad Battery Check" />
+      <picture><img src="https://raw.githubusercontent.com/K-Mokky/mokky.IpadBatteryCheck.io/main/%EC%95%B1%EC%95%84%EC%9D%B4%EC%BD%98.jpg" width="56" alt="iPad Battery Check" /></picture>
     </td>
     <td>
       <b>iPad Battery Check</b>&nbsp;&nbsp;<sub><i>iPadOS</i></sub>
@@ -167,7 +167,7 @@
 <table>
   <tr>
     <td align="center" width="72">
-      <img src="assets/ajou.png" width="44" alt="Ajou University" />
+      <picture><img src="assets/ajou.png" width="44" alt="Ajou University" /></picture>
     </td>
     <td width="430">
       <b>아주대학교</b>&nbsp;&nbsp;<sub><i>Ajou University</i></sub>
@@ -180,7 +180,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="assets/whs.png" width="44" alt="WhiteHat School" />
+      <picture><img src="assets/whs.png" width="44" alt="WhiteHat School" /></picture>
     </td>
     <td>
       <b>화이트햇 스쿨</b>&nbsp;&nbsp;<sub><i>WhiteHat School</i></sub>
@@ -205,22 +205,22 @@
 
 <b>Languages</b>
 
-<img src="https://skillicons.dev/icons?i=java,c,py&theme=dark" height="48" alt="languages" />
+<picture><img src="https://skillicons.dev/icons?i=java,c,py&theme=dark" height="48" alt="languages" /></picture>
 
 <br />
 
 <b>Environment</b>
 
-<img src="https://skillicons.dev/icons?i=apple,bash,git,github&theme=dark" height="48" alt="environment" />
+<picture><img src="https://skillicons.dev/icons?i=apple,bash,git,github&theme=dark" height="48" alt="environment" /></picture>
 
 <br />
 
 <b>AI Tools</b>
 
-<img src="https://img.shields.io/badge/Claude-2c5364?style=flat-square&logo=claude&logoColor=white" alt="claude" />
-<img src="https://img.shields.io/badge/GPT-2c5364?style=flat-square&logo=openai&logoColor=white" alt="gpt" />
-<img src="https://img.shields.io/badge/Gemini-2c5364?style=flat-square&logo=googlegemini&logoColor=white" alt="gemini" />
-<img src="https://img.shields.io/badge/GJC-2c5364?style=flat-square&logo=iterm2&logoColor=white" alt="gjc" />
+<picture><img src="https://img.shields.io/badge/Claude-2c5364?style=flat-square&logo=claude&logoColor=white" alt="claude" /></picture>
+<picture><img src="https://img.shields.io/badge/GPT-2c5364?style=flat-square&logo=openai&logoColor=white" alt="gpt" /></picture>
+<picture><img src="https://img.shields.io/badge/Gemini-2c5364?style=flat-square&logo=googlegemini&logoColor=white" alt="gemini" /></picture>
+<picture><img src="https://img.shields.io/badge/GJC-2c5364?style=flat-square&logo=iterm2&logoColor=white" alt="gjc" /></picture>
 
 </div>
 
@@ -256,6 +256,6 @@
 
 <sub>삽질과 분석 기록은 → <a href="https://www.mokky.store"><b>mokky.store</b></a> &nbsp;·&nbsp; 버그 제보는 <a href="mailto:mokky@mokky.store"><b>mokky@mokky.store</b></a> — 취약점이라면 더 환영해요 🐛</sub>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" width="100%" alt="footer" />
+<picture><img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" width="100%" alt="footer" /></picture>
 
 </div>
