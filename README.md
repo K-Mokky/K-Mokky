@@ -10,7 +10,7 @@
 
 <br /><br />
 
-<picture><img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+KR&weight=500&size=22&duration=2800&pause=900&color=2C5364&center=true&vCenter=true&width=480&lines=%EC%B7%A8%EC%95%BD%EC%A0%90%EC%9D%84%20%EC%B0%BE%EB%8A%94%20%EB%88%88%EC%9C%BC%EB%A1%9C%20%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%8D%A8%EC%9A%94%3B%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%93%B0%EB%8A%94%20%EC%86%90%EC%9C%BC%EB%A1%9C%20%EC%B7%A8%EC%95%BD%EC%A0%90%EC%9D%84%20%EC%B0%BE%EC%95%84%EC%9A%94%3BmacOS%20%EC%95%B1%EA%B3%BC%20%EC%9B%B9%20%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%9A%94" alt="typing" /></picture>
+<picture><img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+KR&weight=500&size=22&duration=2800&pause=900&color=2C5364&center=true&vCenter=true&width=560&lines=Macbook%20Air%20M1%EC%9C%BC%EB%A1%9C%20Windows%20kernel%201-day%20%EB%B6%84%EC%84%9D%20%EC%A4%91%3B%ED%99%94%EC%9D%B4%ED%8A%B8%ED%96%87%20%EC%8A%A4%EC%BF%A8%204%EA%B8%B0%20%ED%99%9C%EB%8F%99%20%EC%A4%91%3B%EC%95%84%EC%A3%BC%EB%8C%80%ED%95%99%EA%B5%90%20%EC%82%AC%EC%9D%B4%EB%B2%84%EB%B3%B4%EC%95%88%ED%95%99%EA%B3%BC%20%EC%9E%AC%ED%95%99%20%EC%A4%91" alt="typing" /></picture>
 
 <br />
 
