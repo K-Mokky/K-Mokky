@@ -141,10 +141,10 @@
   </tr>
   <tr>
     <td align="center">
-      <picture><img src="https://raw.githubusercontent.com/K-Mokky/mokky.IpadBatteryCheck.io/main/%EC%95%B1%EC%95%84%EC%9D%B4%EC%BD%98.jpg" width="56" alt="iPad Battery Check" /></picture>
+      <picture><img src="assets/앱아이콘.jpg" width="56" alt="빠때리!" /></picture>
     </td>
     <td>
-      <b>iPad Battery Check</b>&nbsp;&nbsp;<sub><i>iPadOS</i></sub>
+      <b>빠때리!</b>&nbsp;&nbsp;<sub><i>iPadOS</i></sub>
       <br />
       <sub>아이패드 배터리 상태를 점검하는 앱</sub>
     </td>
